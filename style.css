@@ -53,6 +53,14 @@ p {
   margin: 0 auto 16pt;
 }
 
+ul {
+  margin: 0 auto 4pt;
+}
+
+ul li {
+  padding-bottom: 2pt;
+}
+
 .container {
   margin: 0 auto;
   border: 2px solid green;
@@ -65,13 +73,13 @@ p {
 .left {
   border: 4px brown dotted;
   /* background-color: red; */
-  flex: 1 0 16rem;
+  flex: 1 1 16rem;
   padding: 8pt;
 }
 
 .right {
   border: 4px brown dotted;
   /* background-color: blue; */
-  flex: 3 0 30rem;
+  flex: 3 1 30rem;
   padding: 8pt;
 }
