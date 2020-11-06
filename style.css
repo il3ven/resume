@@ -63,7 +63,7 @@ ul li {
 
 .container {
   margin: 0 auto;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -71,14 +71,14 @@ ul li {
 }
 
 .left {
-  border: 4px brown dotted;
+  /* border: 4px brown dotted; */
   /* background-color: red; */
   flex: 1 1 16rem;
   padding: 8pt;
 }
 
 .right {
-  border: 4px brown dotted;
+  /* border: 4px brown dotted; */
   /* background-color: blue; */
   flex: 3 1 30rem;
   padding: 8pt;
