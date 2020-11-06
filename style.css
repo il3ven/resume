@@ -1,5 +1,60 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 10pt;
+  font-weight: 400;
+  color: #f0f0f0;
+  background-color: #252525;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 16pt;
+  font-weight: 300;
+  color: #fafafa;
+  text-transform: uppercase;
+  margin: 0 0 4pt;
+}
+
+h2 {
+  font-size: 12pt;
+  font-weight: 700;
+  color: #ffc22f;
+  text-transform: uppercase;
+  margin: 0 0 2pt;
+}
+
+.descript {
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+  font-weight: 500;
+  color: #ffc22f;
+  text-transform: uppercase;
+  margin: 0 0 2pt 0pt;
+}
+
+.location {
+  font-family: "Raleway", sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #fafafa;
+  margin: 0 0 2pt;
+}
+
+.sectionsep {
+  margin: 0 auto 16pt;
+}
+
+p {
+  margin: 0 0 0pt;
+}
+
+.section {
+  margin: 0 auto 16pt;
+}
+
 .container {
-  height: 500px;
+  margin: 0 auto;
   border: 2px solid green;
   display: flex;
   flex-wrap: wrap;
@@ -9,12 +64,14 @@
 
 .left {
   border: 4px brown dotted;
-  background-color: red;
+  /* background-color: red; */
   flex: 1 0 16rem;
+  padding: 8pt;
 }
 
 .right {
   border: 4px brown dotted;
-  background-color: blue;
+  /* background-color: blue; */
   flex: 3 0 30rem;
+  padding: 8pt;
 }
