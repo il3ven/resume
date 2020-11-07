@@ -50,7 +50,7 @@ p {
 }
 
 .section {
-  margin: 0 auto 16pt;
+  margin: 0 0 16pt;
 }
 
 ul {
@@ -66,9 +66,9 @@ ul li {
   padding: 0.3rem;
   border: 2px solid green;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
-  align-content: strech;
+  align-content: stretch;
 }
 
 .left {
@@ -76,6 +76,9 @@ ul li {
   /* background-color: red; */
   flex: 1 1 16rem;
   padding: 8pt;
+  /* display: flex; */
+  /* flex-flow: row wrap; */
+  /* justify-content: flex-start; */
 }
 
 .right {
@@ -88,4 +91,56 @@ ul li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.skills {
+  /* border: 2px dotted white; */
+  list-style: none;
+  padding: 0;
+}
+
+.skills-li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 12rem;
+}
+
+.grade1,
+.grade2,
+.grade3,
+.grade4,
+.grade5 {
+  /* border: 2px dotted blue; */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.circle {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #ffc22f;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  display: inline-block;
+}
+
+.grade1 .circle:nth-child(n + 2) {
+  background: #cacaca;
+}
+
+.grade2 .circle:nth-child(n + 3) {
+  background: #cacaca;
+}
+
+.grade3 .circle:nth-child(n + 4) {
+  background: #cacaca;
+}
+
+.grade4 .circle:nth-child(n + 5) {
+  background: #cacaca;
 }
