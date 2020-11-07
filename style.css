@@ -97,6 +97,7 @@ a {
   /* border: 2px dotted white; */
   list-style: none;
   padding: 0;
+  margin-bottom: 10pt;
 }
 
 .skills-li {
