@@ -81,6 +81,7 @@ ul li {
 
 .heading .name {
   /* border: 2px dotted red; */
+  margin-top: 0.5rem;
   font-size: 40pt;
   font-weight: 300;
   text-align: center;
@@ -117,6 +118,10 @@ ul li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .skills {
@@ -179,4 +184,15 @@ a {
   font-weight: 300;
   font-size: 8pt;
   color: #cecece;
+}
+
+@media only screen and (max-width: 600px) {
+  .last-update {
+    display: none;
+  }
+}
+
+/* This keeps a icon in a single line */
+.details-icons {
+  white-space: nowrap;
 }
