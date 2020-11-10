@@ -64,15 +64,29 @@ ul li {
 .container {
   margin: 0 auto;
   padding: 0.3rem;
-  /* border: 2px solid green; */
+  border: 2px solid green;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: stretch;
 }
 
+.heading {
+  margin: 0 auto;
+  padding: 0.3rem;
+  border: 2px dotted white;
+}
+
+.heading p {
+  /* border: 2px dotted red; */
+  color: #f0f0f0;
+  font-size: 40pt;
+  font-weight: 300;
+  text-align: center;
+}
+
 .left {
-  /* border: 4px brown dotted; */
+  border: 4px brown dotted;
   /* background-color: red; */
   flex: 1 1 16rem;
   padding: 8pt;
