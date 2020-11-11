@@ -81,10 +81,11 @@ ul li {
 
 .heading .name {
   /* border: 2px dotted red; */
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0.5rem;
   font-size: 40pt;
   font-weight: 300;
   text-align: center;
+  line-height: 36pt;
 }
 
 .heading .details {
@@ -93,7 +94,7 @@ ul li {
   font-size: 11pt;
 }
 
-.heading .line {
+.line {
   border-top: 0.4pt solid #999999;
   margin-top: 1rem;
 }
@@ -189,4 +190,13 @@ a:hover {
 /* This keeps a icon in a single line */
 .details-icons {
   white-space: nowrap;
+}
+
+.footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 8pt;
+  color: #cecece;
+  text-align: center;
+  margin-bottom: 15pt;
 }
