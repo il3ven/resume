@@ -9,21 +9,18 @@ fs.readFile(filePath, { encoding: "utf-8" }, function (err, data) {
   if (!err) {
     const html = parse(data);
 
+    const comment = `<!--Auto generated at ${new Date().toUTCString()}-->\n`;
     const date = new Date().toLocaleString("en-GB", {
       day: "numeric",
       month: "long",
       year: "numeric",
     });
 
-    console.log(date);
-
-    console.log(html.querySelector(".last-update").lastChild);
-
     html
       .querySelector(".last-update")
       .insertAdjacentHTML("beforeend", `Last Updated on ${date}`);
 
-    fs.writeFile("index.html", html.innerHTML, function (err) {
+    fs.writeFile("index.html", comment + html.innerHTML, function (err) {
       if (err) {
         console.error("Error Occured", err);
       }
