@@ -1,0 +1,23 @@
+{
+  "name": "css_resume",
+  "version": "1.0.0",
+  "description": "A HTML and CSS version of my resume.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/il3ven/resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/il3ven/resume/issues"
+  },
+  "homepage": "https://github.com/il3ven/resume#readme",
+  "dependencies": {
+    "node-html-parser": "^2.0.0"
+  }
+}
