@@ -2,7 +2,7 @@
 
 var fs = require("fs");
 var path = require("path");
-var filePath = path.join(__dirname, "index.html");
+var filePath = path.join(__dirname, "source.html");
 var parse = require("node-html-parser").parse;
 
 fs.readFile(filePath, { encoding: "utf-8" }, function (err, data) {
@@ -19,7 +19,7 @@ fs.readFile(filePath, { encoding: "utf-8" }, function (err, data) {
       .querySelector(".last-update")
       .setAttribute("#text", `Last Updated on ${date}`);
 
-    fs.writeFile("build/index.html", html.innerHTML, function (err) {
+    fs.writeFile("index.html", html.innerHTML, function (err) {
       if (err) {
         console.error("Error Occured", err);
       }
