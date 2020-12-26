@@ -15,9 +15,13 @@ fs.readFile(filePath, { encoding: "utf-8" }, function (err, data) {
       year: "numeric",
     });
 
+    console.log(date);
+
+    console.log(html.querySelector(".last-update").lastChild);
+
     html
       .querySelector(".last-update")
-      .setAttribute("#text", `Last Updated on ${date}`);
+      .insertAdjacentHTML("beforeend", `Last Updated on ${date}`);
 
     fs.writeFile("index.html", html.innerHTML, function (err) {
       if (err) {
